@@ -1,0 +1,21 @@
+$blue: #3F8C91;
+$light-grey: #DCDCDC;
+
+#codeEditor {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 190px);
+    background-color: white;
+
+    .r-a-t .tab-wrapper .tab-button.active .tab, .r-a-t .panel-wrapper {
+        border-color: $blue;
+    }
+
+    .panel-wrapper {
+        height: calc(100vh - 96px);
+
+        .react-monaco-editor-container, .monaco-editor, .overflow-guard {
+            width: calc(100vw - 190px) !important;
+        }
+    }
+}
