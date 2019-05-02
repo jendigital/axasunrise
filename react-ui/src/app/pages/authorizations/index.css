@@ -1,0 +1,46 @@
+#authorizations {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  overflow-y: auto; }
+  #authorizations #authorization_users .table-responsive {
+    width: calc(100vw - 190px);
+    height: 355px; }
+    #authorizations #authorization_users .table-responsive tbody {
+      height: 320px; }
+  #authorizations #authorization {
+    width: calc(100vw - 230px);
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px; }
+    #authorizations #authorization #title {
+      width: calc(100vw - 230px);
+      background-color: #3F8C91;
+      color: white;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #authorizations #authorization .sections {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: calc(100vh - 270px);
+      overflow-y: auto; }
+    #authorizations #authorization .columns {
+      width: 25%; }
+    #authorizations #authorization .section {
+      height: 35px;
+      padding-top: 10px;
+      text-decoration: underline #3F8C91;
+      border: 1px solid #3F8C91;
+      background-color: #6EAAAE;
+      color: white; }
+    #authorizations #authorization .section, #authorizations #authorization .authorization {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      border: 1px solid #3F8C91;
+      border-top: 0; }
+    #authorizations #authorization .authorization {
+      height: 335px; }
