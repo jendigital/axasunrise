@@ -1,0 +1,232 @@
+#tablist {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 190px);
+  background-color: white; }
+  #tablist .r-a-t .tab-wrapper .tab-button.active .tab, #tablist .r-a-t .panel-wrapper {
+    border-color: #3F8C91; }
+  #tablist .panel-wrapper {
+    height: 0; }
+    #tablist .panel-wrapper .panel div:first-child {
+      display: flex; }
+  #tablist .tab-wrapper {
+    position: relative; }
+  #tablist .model {
+    height: calc(100vh - 90px);
+    width: calc(100vw - 190px);
+    overflow: auto;
+    position: relative;
+    background-color: white;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px; }
+  #tablist .srd-diagram {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    cursor: move;
+    overflow: hidden;
+    height: calc(100vh - 97px);
+    width: calc(100vw - 407px);
+    background-color: white;
+    background-image: linear-gradient(#434343, #282828); }
+    #tablist .srd-diagram .point {
+      fill: rgba(255, 255, 255, 0.5); }
+      #tablist .srd-diagram .point.selected {
+        fill: #00c0ff; }
+    #tablist .srd-diagram .selector {
+      position: absolute;
+      background-color: rgba(0, 192, 255, 0.2);
+      border: solid 2px #00c0ff; }
+    #tablist .srd-diagram svg {
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      transform-origin: 0 0;
+      overflow: visible; }
+    #tablist .srd-diagram .node-view {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      pointer-events: none;
+      transform-origin: 0 0; }
+    #tablist .srd-diagram .node {
+      position: absolute;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Chrome/Safari/Opera */
+      user-select: none;
+      cursor: move;
+      pointer-events: all; }
+      #tablist .srd-diagram .node.selected > * {
+        border-color: #00c0ff !important;
+        -webkit-filter: drop-shadow(0 0 20px rgba(0, 192, 255, 0.5)); }
+    #tablist .srd-diagram path {
+      fill: none;
+      pointer-events: all; }
+      #tablist .srd-diagram path.selected {
+        stroke: #00c0ff !important;
+        stroke-dasharray: 10, 2;
+        animation: dash 1s linear infinite; }
+    #tablist .srd-diagram .port {
+      width: 15px;
+      height: 15px;
+      background: rgba(255, 255, 255, 0.1); }
+      #tablist .srd-diagram .port:hover, #tablist .srd-diagram .port.selected {
+        background: #c0ff00; }
+    #tablist .srd-diagram .basic-node {
+      background-color: #1e1e1e;
+      border-radius: 5px;
+      font-family: Arial;
+      color: white;
+      border: solid 2px black;
+      overflow: visible;
+      font-size: 11px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      #tablist .srd-diagram .basic-node .title {
+        /* background-image: linear-gradient(rgba(black,0.1),rgba(black,0.2));*/
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        white-space: nowrap; }
+        #tablist .srd-diagram .basic-node .title > * {
+          align-self: center; }
+        #tablist .srd-diagram .basic-node .title .fa {
+          padding: 5px;
+          opacity: 0.2;
+          cursor: pointer; }
+          #tablist .srd-diagram .basic-node .title .fa:hover {
+            opacity: 1.0; }
+        #tablist .srd-diagram .basic-node .title .name {
+          flex-grow: 1;
+          padding: 5px 5px; }
+      #tablist .srd-diagram .basic-node .ports {
+        display: flex;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)); }
+        #tablist .srd-diagram .basic-node .ports .in,
+        #tablist .srd-diagram .basic-node .ports .out {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column; }
+        #tablist .srd-diagram .basic-node .ports .in-port,
+        #tablist .srd-diagram .basic-node .ports .out-port {
+          display: flex;
+          margin-top: 1px; }
+          #tablist .srd-diagram .basic-node .ports .in-port > *,
+          #tablist .srd-diagram .basic-node .ports .out-port > * {
+            align-self: center; }
+          #tablist .srd-diagram .basic-node .ports .in-port .name,
+          #tablist .srd-diagram .basic-node .ports .out-port .name {
+            padding: 0 5px; }
+        #tablist .srd-diagram .basic-node .ports .out-port {
+          justify-content: flex-end; }
+          #tablist .srd-diagram .basic-node .ports .out-port .name {
+            justify-content: flex-end;
+            text-align: right; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 24; }
+  to {
+    stroke-dashoffset: 0; } }
+  #tablist .tray {
+    min-width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0; }
+  #tablist .tray-item {
+    color: black;
+    font-family: Helvetica, Arial;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    cursor: pointer; }
+  #tablist #paper-html-elements {
+    position: relative;
+    border: 1px solid gray;
+    display: inline-block;
+    background: transparent;
+    overflow: hidden; }
+  #tablist #paper-html-elements svg {
+    background: transparent; }
+  #tablist #paper-html-elements svg .link {
+    z-index: 2; }
+  #tablist .html-element {
+    position: absolute;
+    /* Make sure events are propagated to the JointJS element so, e.g. dragging works.*/
+    pointer-events: none;
+    -webkit-user-select: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px black, 2px 2px 1px gray;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: auto; }
+  #tablist .name {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid black; }
+  #tablist .property-header {
+    width: 100%;
+    height: 20px;
+    text-decoration: underline; }
+  #tablist .attribute, #tablist .function {
+    width: 100%;
+    height: 20px; }
+  #tablist .data {
+    background-color: #cde7f0; }
+  #tablist .output {
+    background-color: #f6b2ab; }
+  #tablist .service {
+    background-color: #DCDCDC; }
+  #tablist .event {
+    background-color: #d5f0cd; }
+  #tablist .html-element select,
+  #tablist .html-element input,
+  #tablist .html-element button {
+    /* Enable interacting with inputs only. */
+    pointer-events: auto; }
+  #tablist .html-element button.delete {
+    color: white;
+    border: none;
+    background-color: #C0392B;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer; }
+  #tablist .html-element button.delete:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px; }
+  #tablist .html-element select {
+    position: absolute;
+    right: 2px;
+    bottom: 28px; }
+  #tablist .html-element input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    color: #333;
+    padding: 5px;
+    height: 16px; }
+  #tablist .html-element label {
+    color: #333;
+    text-shadow: 1px 0 0 lightgray;
+    font-weight: bold; }
+  #tablist .html-element span {
+    position: absolute;
+    top: 2px;
+    right: 9px;
+    color: white;
+    font-size: 10px; }
