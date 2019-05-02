@@ -1,0 +1,20 @@
+#groups_actions {
+  height: 50px;
+  width: calc(100vw - 190px);
+  border-bottom: 2px solid #3F8C91;
+  color: #3F8C91;
+  display: flex;
+  background-color: #A4CBCE; }
+  #groups_actions a {
+    text-decoration: none;
+    color: #3F8C91; }
+  #groups_actions .group_action {
+    height: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: #3F8C91 1px solid;
+    display: flex;
+    align-items: center; }
+    #groups_actions .group_action.active {
+      color: #FFBF00;
+      font-weight: bold; }

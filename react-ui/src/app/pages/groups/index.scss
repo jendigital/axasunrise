@@ -1,0 +1,11 @@
+#groups {
+    #group_list {
+        .table-responsive {
+            height: calc(100vh - 100px);
+
+            tbody {
+                height:  calc(100vh - 140px);
+            }
+        }
+    }
+}
