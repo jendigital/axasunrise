@@ -1,0 +1,30 @@
+$blue: #3F8C91;
+$really-light-blue: #A4CBCE;
+
+#models {
+
+    #model_list {
+        .table-responsive {
+            height: 500px;
+
+            tbody {
+                height: 468px;
+
+                .current_model {
+                    background-color: $blue;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #history {
+        .table-responsive {
+            height: 260px;
+
+            tbody {
+                height: 225px;
+            }
+        }
+    }
+}

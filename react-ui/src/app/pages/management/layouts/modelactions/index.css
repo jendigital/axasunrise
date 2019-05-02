@@ -1,0 +1,31 @@
+#model_edition {
+  height: 45px;
+  width: calc(100vw - 190px);
+  border-bottom: 2px solid #3F8C91;
+  color: #3F8C91;
+  display: flex;
+  background-color: #A4CBCE; }
+  #model_edition a {
+    text-decoration: none;
+    color: #3F8C91; }
+  #model_edition .model_action {
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: #3F8C91 1px solid;
+    display: flex;
+    align-items: center;
+    color: #3F8C91; }
+    #model_edition .model_action.active {
+      color: #FFBF00;
+      font-weight: bold;
+      background-color: #3F8C91; }
+  #model_edition #crud {
+    background-color: #FFBF00;
+    color: white; }
+  #model_edition #transfer {
+    display: flex;
+    background-color: white; }
+  #model_edition #crud, #model_edition #transfer {
+    display: flex;
+    align-items: center; }

@@ -31,6 +31,8 @@ nous mettrons en place des rituels agiles tels que des réunions rapides je vous
 Un Trello Sunrise a été mis en place pour définir et suivre les tâches du projet.
 https://trello.com/b/vN7gK1qj/sunrise-frontjs
 
+Chaque étape du développement dans trello contient l'image du logiciel d'origine et la nouvelle version.
+
 Nécessaire pour que le front fonctionne
 ========================================
 

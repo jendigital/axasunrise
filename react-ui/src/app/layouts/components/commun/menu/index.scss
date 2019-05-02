@@ -1,0 +1,151 @@
+$screen-sm-min:     768px;
+$blue: #3F8C91;
+$light-blue: #6EAAAE;
+$really-light-blue: #A4CBCE;
+$gold: #FFBF00;
+
+.menu {
+    width: 190px;
+    color: white;
+    height: calc(100vh - 55px);
+    background-color: $really-light-blue;
+
+    a {
+        color: white;
+    }
+
+    .tabs {
+        width: 190px;
+        height: 35px;
+        padding-left: 20px;
+        border-bottom: $gold 1px solid;
+        display: flex;
+        align-items: center;
+
+        &.active {
+            background-color: $blue;
+            color: $gold;
+        }
+
+        &:hover {
+            background-color: $light-blue;
+            color: white;
+        }
+
+        img {
+            padding-right: 20px;
+        }
+    }
+
+    .tree {
+        background-color: white;
+        color: $blue;
+        height: 450px;
+        border: 1px solid $blue;
+        align-items: flex-start;
+        padding-left: 0;
+        flex-direction: column;
+
+        .tree-content {
+            overflow: auto;
+            height: 380px;
+        }
+
+        .active {
+            background-color: $blue;
+            color: $gold;
+        }
+
+        .tab-header {
+            border-top: $gold 1px solid;
+            background-color: white;
+            color: $gold;
+        }
+
+        .side-header {
+            border-top: $gold 1px solid;
+            background-color: $gold;
+            color: white;
+        }
+
+        .element {
+            border-bottom: 0;
+            padding-left: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:hover {
+                background-color: $light-blue;
+                color: white;
+            }
+        }
+
+        .subelement {
+            border-bottom: 0;
+            padding-left: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:hover {
+                background-color: $light-blue;
+                color: white;
+            }
+        }
+    }
+
+    .properties {
+        background-color: white;
+        color: $blue;
+        height: 405px;
+        border: 1px solid $blue;
+        align-items: flex-start;
+        padding-left: 0;
+        flex-direction: column;
+
+        .tree-content {
+            overflow: auto;
+            height: 465px;
+        }
+
+        .active {
+            background-color: $blue;
+            color: $gold;
+        }
+
+        .tab-header {
+            border-top: $gold 1px solid;
+            background-color: white;
+            color: $gold;
+        }
+
+        .side-header {
+            border-top: $gold 1px solid;
+            background-color: $gold;
+            color: white;
+        }
+
+        .element {
+            border-bottom: 0;
+            padding-left: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:hover {
+                background-color: $light-blue;
+                color: white;
+            }
+        }
+
+        .subelement {
+            border-bottom: 0;
+            padding-left: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:hover {
+                background-color: $light-blue;
+                color: white;
+            }
+        }
+    }
+}

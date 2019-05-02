@@ -1,0 +1,70 @@
+$blue: #3F8C91;
+$light-blue: #6EAAAE;
+$gold: #FFBF00;
+
+.header {
+    padding-left: 30px;
+    height: 55px;
+    width: 100vw;
+    background-color: $blue;
+    color: white;
+    display: flex;
+    border-bottom: 5px solid $gold;
+    align-items: center;
+
+    .logo {
+        width: 40px;
+        margin-right: 25px;
+    }
+
+    a, a:hover, a:active {
+        color: white;
+        text-decoration: none;
+    }
+
+    .tabs {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        &.active {
+            background-color: $gold;
+        }
+
+        &:hover {
+            background-color: $light-blue;
+        }
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        position: absolute;
+        right: 200px;
+
+        .user {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .datetime {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: white;
+        font-size: 12px;
+
+        .time {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}

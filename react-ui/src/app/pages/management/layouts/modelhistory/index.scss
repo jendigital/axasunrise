@@ -1,0 +1,40 @@
+$blue: #3F8C91;
+$really-light-blue: #A4CBCE;
+$gold: #FFBF00;
+
+#model_history {
+    height: 50px;
+    width: calc(100vw - 190px);
+    border-bottom: 2px solid $blue;
+    color: $blue;
+    display: flex;
+    background-color: $really-light-blue;
+    border-top: 5px solid $gold;
+
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+
+    .history_action {
+        height: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: $blue 1px solid;
+        display: flex;
+        align-items: center;
+
+        &.active {
+            color: $gold;
+            font-weight: bold;
+        }
+    }
+
+    .history_title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        color: white;
+    }
+}

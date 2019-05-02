@@ -1,0 +1,28 @@
+.layout {
+  top: 55px;
+  bottom: 0; }
+  .layout .main {
+    display: flex; }
+  .layout .table-responsive {
+    overflow-y: hidden; }
+  .layout tbody {
+    display: block;
+    overflow-y: auto; }
+  .layout thead, .layout tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  .layout tbody td {
+    overflow-x: auto; }
+  .layout .small-column {
+    width: 70px; }
+  .layout .normal-column {
+    width: 170px; }
+  .layout ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px; }
+  .layout :-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  .layout ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey; }

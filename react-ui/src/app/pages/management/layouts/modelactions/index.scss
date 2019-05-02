@@ -1,0 +1,48 @@
+$blue: #3F8C91;
+$really-light-blue: #A4CBCE;
+$gold: #FFBF00;
+
+#model_edition {
+    height: 45px;
+    width: calc(100vw - 190px);
+    border-bottom: 2px solid $blue;
+    color: $blue;
+    display: flex;
+    background-color: $really-light-blue;
+
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+
+    .model_action {
+        height: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: $blue 1px solid;
+        display: flex;
+        align-items: center;
+        color: $blue;
+
+        &.active {
+            color: $gold;
+            font-weight: bold;
+            background-color: $blue;
+        }
+    }
+
+    #crud {
+        background-color: $gold;
+        color: white;
+    }
+
+    #transfer {
+        display: flex;
+        background-color: white;
+    }
+
+    #crud, #transfer {
+        display: flex;
+        align-items: center;
+    }
+}

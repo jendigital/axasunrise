@@ -1,0 +1,98 @@
+.menu {
+  width: 190px;
+  color: white;
+  height: calc(100vh - 55px);
+  background-color: #A4CBCE; }
+  .menu a {
+    color: white; }
+  .menu .tabs {
+    width: 190px;
+    height: 35px;
+    padding-left: 20px;
+    border-bottom: #FFBF00 1px solid;
+    display: flex;
+    align-items: center; }
+    .menu .tabs.active {
+      background-color: #3F8C91;
+      color: #FFBF00; }
+    .menu .tabs:hover {
+      background-color: #6EAAAE;
+      color: white; }
+    .menu .tabs img {
+      padding-right: 20px; }
+  .menu .tree {
+    background-color: white;
+    color: #3F8C91;
+    height: 450px;
+    border: 1px solid #3F8C91;
+    align-items: flex-start;
+    padding-left: 0;
+    flex-direction: column; }
+    .menu .tree .tree-content {
+      overflow: auto;
+      height: 380px; }
+    .menu .tree .active {
+      background-color: #3F8C91;
+      color: #FFBF00; }
+    .menu .tree .tab-header {
+      border-top: #FFBF00 1px solid;
+      background-color: white;
+      color: #FFBF00; }
+    .menu .tree .side-header {
+      border-top: #FFBF00 1px solid;
+      background-color: #FFBF00;
+      color: white; }
+    .menu .tree .element {
+      border-bottom: 0;
+      padding-left: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .menu .tree .element:hover {
+        background-color: #6EAAAE;
+        color: white; }
+    .menu .tree .subelement {
+      border-bottom: 0;
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .menu .tree .subelement:hover {
+        background-color: #6EAAAE;
+        color: white; }
+  .menu .properties {
+    background-color: white;
+    color: #3F8C91;
+    height: 405px;
+    border: 1px solid #3F8C91;
+    align-items: flex-start;
+    padding-left: 0;
+    flex-direction: column; }
+    .menu .properties .tree-content {
+      overflow: auto;
+      height: 465px; }
+    .menu .properties .active {
+      background-color: #3F8C91;
+      color: #FFBF00; }
+    .menu .properties .tab-header {
+      border-top: #FFBF00 1px solid;
+      background-color: white;
+      color: #FFBF00; }
+    .menu .properties .side-header {
+      border-top: #FFBF00 1px solid;
+      background-color: #FFBF00;
+      color: white; }
+    .menu .properties .element {
+      border-bottom: 0;
+      padding-left: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .menu .properties .element:hover {
+        background-color: #6EAAAE;
+        color: white; }
+    .menu .properties .subelement {
+      border-bottom: 0;
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .menu .properties .subelement:hover {
+        background-color: #6EAAAE;
+        color: white; }

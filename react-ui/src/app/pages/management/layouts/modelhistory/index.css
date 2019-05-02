@@ -1,0 +1,27 @@
+#model_history {
+  height: 50px;
+  width: calc(100vw - 190px);
+  border-bottom: 2px solid #3F8C91;
+  color: #3F8C91;
+  display: flex;
+  background-color: #A4CBCE;
+  border-top: 5px solid #FFBF00; }
+  #model_history a {
+    text-decoration: none;
+    color: #3F8C91; }
+  #model_history .history_action {
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: #3F8C91 1px solid;
+    display: flex;
+    align-items: center; }
+    #model_history .history_action.active {
+      color: #FFBF00;
+      font-weight: bold; }
+  #model_history .history_title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: white; }

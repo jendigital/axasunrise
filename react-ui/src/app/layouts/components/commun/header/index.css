@@ -1,0 +1,45 @@
+.header {
+  padding-left: 30px;
+  height: 55px;
+  width: 100vw;
+  background-color: #3F8C91;
+  color: white;
+  display: flex;
+  border-bottom: 5px solid #FFBF00;
+  align-items: center; }
+  .header .logo {
+    width: 40px;
+    margin-right: 25px; }
+  .header a, .header a:hover, .header a:active {
+    color: white;
+    text-decoration: none; }
+  .header .tabs {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px; }
+    .header .tabs.active {
+      background-color: #FFBF00; }
+    .header .tabs:hover {
+      background-color: #6EAAAE; }
+  .header .info {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    position: absolute;
+    right: 200px; }
+    .header .info .user {
+      margin-left: 0;
+      margin-right: 5px; }
+    .header .info img {
+      margin-left: 10px; }
+  .header .datetime {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 12px; }
+    .header .datetime .time {
+      padding-top: 0;
+      margin-top: 0; }

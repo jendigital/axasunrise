@@ -1,0 +1,12 @@
+#models #model_list .table-responsive {
+  height: 500px; }
+  #models #model_list .table-responsive tbody {
+    height: 468px; }
+    #models #model_list .table-responsive tbody .current_model {
+      background-color: #3F8C91;
+      color: white; }
+
+#models #history .table-responsive {
+  height: 260px; }
+  #models #history .table-responsive tbody {
+    height: 225px; }
