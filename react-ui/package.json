@@ -1,0 +1,46 @@
+{
+  "name": "sunriseaxa-reactjs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.4",
+    "babel-plugin-react-intl": "^3.0.1",
+    "basic-auth-token": "^0.4.2",
+    "config": "^2.0.1",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.5.2",
+    "react-awesome-tabs": "^0.1.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.5.2",
+    "react-modal": "^3.6.1",
+    "react-monaco-editor": "^0.17.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^1.1.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webdav": "^2.0.0",
+    "webdav-client": "^1.4.2"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "HTTPS=true react-scripts start",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "jointjs": "^2.2.1",
+    "redux-devtools-extension": "^2.13.7"
+  }
+}

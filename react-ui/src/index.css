@@ -1,0 +1,93 @@
+body {
+  font-family: "Arial";
+  overflow: hidden; }
+
+.modal-container .modal-title {
+  padding-bottom: 20px;
+  color: #3F8C91; }
+  .modal-container .modal-title .close {
+    float: right; }
+
+.modal-container form .form-line {
+  display: flex;
+  padding-bottom: 10px; }
+  .modal-container form .form-line .form-label {
+    width: 150px; }
+  .modal-container form .form-line .form-version {
+    display: flex; }
+    .modal-container form .form-line .form-version .form-version-container {
+      display: flex;
+      flex-direction: column; }
+      .modal-container form .form-line .form-version .form-version-container input[type="number"] {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px; }
+  .modal-container form .form-line .selectFile input {
+    width: 310px;
+    padding-left: 5px; }
+  .modal-container form .form-line .selectFile select {
+    width: 80px;
+    height: 26px;
+    -webkit-appearance: none;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 16px; }
+  .modal-container form .form-line input, .modal-container form .form-line select {
+    width: 490px;
+    padding-left: 5px; }
+  .modal-container form .form-line select {
+    height: 26px;
+    -webkit-appearance: none;
+    padding-left: 5px;
+    background: url("./app/assets/img/down-arrow.png") no-repeat 90% 50%;
+    background-size: 10px; }
+
+.explorer {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column; }
+  .explorer .back {
+    color: #3F8C91;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center; }
+  .explorer .list {
+    display: flex;
+    flex-wrap: wrap; }
+  .explorer .folder, .explorer .file {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px; }
+    .explorer .folder img, .explorer .file img {
+      margin-right: 5px; }
+
+.file-header {
+  display: flex;
+  margin-left: 150px; }
+  .file-header .path {
+    width: 310px; }
+  .file-header .sep {
+    width: 80px;
+    margin-left: 10px; }
+  .file-header .scope {
+    width: 80px;
+    margin-left: 10px; }
+  .file-header .hasHeader {
+    width: 80px;
+    margin-left: 10px; }
+
+.submit {
+  float: right;
+  background-color: #3F8C91;
+  color: white;
+  padding: 10px; }
+
+.error {
+  color: #FFBF00; }
