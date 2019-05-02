@@ -1,0 +1,17 @@
+$blue: #3F8C91;
+$light-blue: #6EAAAE;
+
+#not-found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $light-blue;
+    color: $blue;
+
+    span {
+        color: white;
+    }
+}
